@@ -1,23 +1,145 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 .header {
-  height: 200px;
-  background-color: #00cc99; }
+  height: 80px; }
+  .header_logo {
+    width: 80px;
+    height: 48.57px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
+    background-size: cover;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; }
+  .header_nav {
+    display: none; }
+    .header_nav a:hover {
+      -webkit-box-shadow: 0 2px #fff;
+              box-shadow: 0 2px #fff; }
+  .header_m-nav li {
+    width: 50%;
+    border: 1px solid #fff; }
+    .header_m-nav li:hover {
+      background-color: #650300; }
+  @media (min-width: 768px) {
+    .header {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .header_nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 20px; }
+      .header_m-nav {
+        display: none; } }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
+.footer_nav {
+  display: none; }
+  .footer_nav a:hover {
+    -webkit-box-shadow: 0 2px #fff;
+            box-shadow: 0 2px #fff; }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #00cc99; }
+.footer_contact a:hover {
+  color: #dd0801; }
+
+.footer_contact span {
+  font-size: 18px;
+  vertical-align: middle; }
+
+.footer_link img {
+  width: 24px; }
+  .footer_link img:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+
+.footer_copyright {
+  border-top: 1px solid #fff; }
+  .footer_copyright a:hover {
+    -webkit-box-shadow: 0 2px #fff;
+            box-shadow: 0 2px #fff; }
+
+@media (min-width: 768px) {
+  .footer_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 24px; }
+    .footer_nav li {
+      padding: 8px 0; }
+  .footer_link img {
+    width: 40px; }
+  .footer_contact {
+    font-size: 36px; }
+    .footer_contact span {
+      font-size: 36px; }
+  .footer_copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .footer_copyright ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 16px;
+      font-size: 14px; } }
+
+@media (min-width: 1200px) {
+  .footer_nav li {
+    padding: 12px 0; }
+  .footer_link img {
+    width: 48px; }
+  .footer_copyright p {
+    padding-top: 32px; }
+  .footer_copyright ul {
+    margin-top: 32px; } }
 
 /*# sourceMappingURL=all.css.map */
